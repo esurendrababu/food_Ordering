@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    <div class="container">
+        <div class="newtask">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button id="addTask">Add</button>
+        </div>
+        <div id="taskList"></div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+<style>
+    body{
+        height: 100vh;
+        background: #52b69a;
+        display:grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .container{
+        width: 40%;
+        min-width: 450px;
+        min-height: 100px;
+        background: #fff;
+        border-radius: 10px;
+    }
+    #newtask{
+position: relative;
+padding: 30px 20px;
+
+    }
+    #newtask input{
+        width: 75px;
+        height:45px;
+        font-family:'Popoins', sans-serif;
+        font-size: 15px;
+        border: 2px solid red;
+        padding: 12px;
+        color:#111111;
+        font-weight: 500;
+        border-radius: 10px;
+    }
+    #newtask input:focus{
+        outline: none;
+        border-color: #0d75ec;
+    }
+    #newtask button{
+        position:relative;
+        float:right;
+        width: 20%;
+        height: 65px;
+        border-radius: 5px;
+        font-weight: 500;
+        font-size: 16px;
+        background: color #1a759f;
+        border: none;
+        color:#ffffff;
+        cursor: pointer;
+        outline: none;
+    }
+    #task-list{
+        background-color: #ffffff;
+        padding: 30px 20px;
+        margin-top: 10px;
+        border-radius: 10px;
+        width: 100%;
+        position: relative;
+    }
+    .task{
+        background-color: #c5e1e6;
+        height: 50px;
+        margin-bottom: 8px;
+        padding: 5px 10px;
+        display: flex;
+        border-radius: 5px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #939697;
+    }
+    .task span{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .delete{
+        background-color: #1a759f;
+        color: #ffffff;
+        height: 100%;
+        width: 70px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    .task .custome-checkbox{
+        display: inline-block;
+        width: 3em;
+        height: 2em;
+        background-color: #fff;
+        border: 1px solid #1a759f;
+        margin-right: 0.1em;
+        border-radius: 50%;
+    }
+    .task-completed .custome-checkbox{
+          background-color: #6a994e;
+
+    }
+    .task-completed .taskname{
+        text-decoration: line-through;
+        color:#6a994e;
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const addButton = document.getElementById("addTask");
+        const taskInput = document.getElementById("taskInput");
+        const taskList = document.getElementById("taskList");
+
+        addButton.addEventListener("click", function () {
+            const taskName = taskInput.value.trim();
+
+            if (taskName !== "") {
+                const taskItem = document.createElement("div");
+                taskItem.classList.add("task");
+                taskItem.innerHTML = `
+                    <span class="taskname">${taskName}</span>
+                    <button class="delete">Delete</button>
+                    <div class="custom-checkbox"></div>
+                `;
+
+                taskList.appendChild(taskItem);
+                taskInput.value = "";
+
+                const deleteButton = taskItem.querySelector(".delete");
+                deleteButton.addEventListener("click", function () {
+                    taskList.removeChild(taskItem);
+                });
+
+                const checkBox = taskItem.querySelector(".custom-checkbox");
+                checkBox.addEventListener("click", function () {
+                    taskItem.classList.toggle("task-completed");
+                });
+            }
+        });
+
+        // Handle pressing "Enter" key
+        taskInput.addEventListener("keypress", function (event) {
+            if (event.key === "Enter") {
+                addButton.click();
+            }
+        });
+    });
+</script>

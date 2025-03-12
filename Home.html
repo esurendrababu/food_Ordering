@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>surendra</title>
+  <link rel="icon" type="image/x-icon" href="./07 copy[509].JPG" class="tittle">
+
+  <!-- Include Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./Home.css">
+  <script src="https://kit.fontawesome.com/c6d4ae3193.js" crossorigin="anonymous"></script>
+  <script src="./Home.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+</head>
+<body>
+  <!-- Navigation bar -->
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-custom">
+    <div class="center-logo">
+      <a class="navbar-brand" href="#">SURENDRA</a>
+    </div>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span> <i class="fa-solid fa-bars fa-shake"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto center-menu">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" id="margin">Home <span class="sr-only">(current)</span></a>
+        </li>
+        
+        <li class="nav-item">
+          <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-secondary" > <a class="checkout" href="./cart-page.html">Checkout</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-toggle="modal" data-target="#cartModal">
+              <i class="fas fa-shopping-bag"></i> Cart <span id="cart-count">0</span>
+            </a>
+          </li>
+         
+         <script>
+            var cartCount = 0;
+          
+            function updateCartCount() {
+              var cartCountElement = document.getElementById('cart-count');
+              if (cartCountElement) {
+                cartCountElement.textContent = cartCount;
+              }
+            }
+          
+            var addToCartButtons = document.querySelectorAll('.addToCart');
+            addToCartButtons.forEach(function(button) {
+              button.addEventListener('click', function() {
+                cartCount++;
+                updateCartCount();
+              });
+            });
+          
+            updateCartCount();
+          </script>          
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="All">
+  <div class="Burger" >
+    <div class="background"> <span id="Tasty">Tasty
+   </span> 
+   <span id="Tasty1">Burger</span>
+        
+        <a href="#" id="seemorea"> <input id="seemore" type="button" value="SEE MORE"></a>
+    &nbsp;
+&nbsp;&nbsp;
+<br>
+<br>
+<br>
+<br>
+<br></div>
+  </div>
+  
+  <!-- section 2 starting -->
+  <div class="section2">
+<img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/food-photographer-david-fedulov-W1Yi4z375L0-unsplash.jpg" id="img2" alt="">
+   <div id="section2_right">        <a href="#"> <input id="about" type="button" value="AbOUT US"></a>  
+    <span id="Delivering"><b> Delivering best ingredients for <br> our trusty food lovers </b></span> <span id="Amid">Amidst a world of choices, a burger remains my constant craving, a symphony of flavors that dances upon my taste buds. It's not just a meal; it's an art form, a masterpiece of succulence and satisfaction. With every bite, I savor the love, dedication, and perfection that crafted this culinary delight. For a burger lover like me, each experience is a journey of taste, a celebration of life's simplest and most profound pleasures.</span>
+   </div>
+
+<!-- section3 -->
+
+<h1 id="Special">Special Offers</h1>
+<br>
+<br>
+<br>
+<div class="row">
+    <div class="col-md-2" style="background-color: rgb(249, 249, 249);"> </div>
+
+    <div class="col-md-4" style="background-color: rgb(249, 249, 249);">
+        <!-- First Part Content -->
+        <button id="NEW">NEW in Town</button>
+       <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679.jpg" alt=""> <br>
+       <h2>Ham Sandwich</h2>
+       <button id="Fat">Fat26g</button> <button id="Fat">Sugar34g</button> <button id="Fat">Car24g</button>
+
+       <p id="Lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis provident exercitationem dolores tempore quidem maiores velit earum.</p> <br>
+       <h1 id="cost">$16</h1>
+        <span id="See"> <a href="#"> <i class="fa-solid fa-circle-plus fa-beat" style="color: #ff14eb;"></i><input id="Check" type="button" value="Check More">  </a></span>
+    </div>
+
+
+
+
+    <div class="col-md-3" style="background-color: rgba(244, 244, 244, 0.733);">
+        <!-- Card 1 -->
+        <div class="card" style="width: 18rem;">
+            <center>  <img class="card-img-top" src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-3.jpg" alt="Card image cap"></center>
+            <div class="card-body">
+            <center> <p class="card-text"><h2>juicy Beef <br> Burger Meal</h2> </p> </center>
+              <center> <strong> <input id="Cart2" type="button" value="$16"></strong></center>
+
+              <center> <a href="#" id="Cart_hover" class="fa-solid fa-plus"> &nbsp; add to cart</a> </center>
+            </div>
+          </div> <br>
+          <!-- Card 2 -->
+          <div class="card" style="width: 18rem;">
+            <center>  <img class="card-img-top" src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-4.jpg" alt="Card image cap"> </center>
+            <div class="card-body">
+                <center>    <p class="card-text"><h2>Blueberry <br> Waffles</h2> </p> </center>
+                <center> <strong> <input id="Cart2" type="button" value="$4"></strong></center>
+                <center> <a href="#" id="Cart_hover" class="fa-solid fa-plus"> &nbsp; add to cart</a> </center>
+
+
+                </div>
+          </div>
+          
+        
+
+
+  </div>
+
+  <div class="col-md-3" style="background-color: rgba(244, 244, 244, 0.733);">
+    <!-- Card 3 -->
+    <div class="card" style="width: 18rem;">
+        <center>   <img class="card-img-top" src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy.jpg" alt="Card image cap"> </center>
+        <div class="card-body">
+            <center>      <p class="card-text"><h2>Choko Milkshake </h2> </p></center>
+            <center> <strong> <input id="Cart2" type="button" value="$8" onclick="updatetoCartCount()"></strong></center>
+            <center> <a href="#" id="Cart_hover" class="fa-solid fa-plus"> &nbsp; add to cart</a> </center>
+
+
+            </div>
+      </div>
+      <br>
+      <!-- Card 4 -->
+      <div class="card" style="width: 18rem;">
+        <center>   <img class="card-img-top" src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/Hue_Saturation-679-copy-2.jpg" alt="Card image cap"> </center>
+        <div class="card-body">
+            <center>   <p class="card-text"><h2>Medium portion<br> Fries</h2> </p></center>
+            <center> <strong> <input id="Cart2" type="button" value="$3"></strong></center>
+            <center> <a href="#" id="Cart_hover" class="fa-solid fa-plus"> &nbsp; add to cart</a> </center>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+            </div>
+      </div>
+    </div>
+<!-- section 3 -->
+
+
+
+
+
+<div class="section3" ata-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
+    <div class="section3_back">
+        <img src="./Layer-562.png" alt="" id="section3_img1">
+         <button id="section3_btn1">-25% <small> OFF</small></button>
+
+         <span id="section3_span1" data-aos="fade-up"
+         data-aos-anchor-placement="center-bottom">Enjoy our <br> specially prepared <br> burgers for you</span>
+
+       
+        <span id="section3_span2" data-aos="fade-up"
+        data-aos-anchor-placement="center-up">Dont miss out on our daily special offers
+        </span>
+      <a href="#" id="section3_a1">  <input type="button" id="section3_btn2" value="see menu"> </a>
+    </div>
+
+    <!-- ---------------------------------------------- -->
+    <div class="section3_back" >
+        <img src="./Layer-563.png" alt="" id="section3_img2">
+         <button id="section3_btn1">-15% <small> OFF</small></button>
+
+         <span id="section3_span1" data-aos="fade-up"
+         data-aos-anchor-placement="center-up">New, Amazing <br> sandwich offers <br> every day</span>
+
+       
+        <span id="section3_span2" data-aos="fade-up"
+        data-aos-anchor-placement="center-top">just add some of our juicy side dishes
+        </span>
+      <a href="#" id="section3_a1">  <input type="button" id="section3_btn2" value="see more"> </a>
+    </div>
+  <!-- section 4 -->
+</div>
+     <h1 class="section4_h1" data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0"> Trending Burgers</h1> <br>
+
+     <div class="row" id="section4_row1" data-aos="zoom-out-left">
+        <div class="col-md-3">
+          <!-- Content for the first part -->
+          <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger1.jpg" alt="">
+           <center> <h2>Juicy Burger</h2></center>
+           <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+           <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+           
+
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-bottom">
+          <!-- Content for the second part -->
+          <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger4.jpg" alt="">
+          <center> <h2>Juicy Burger</h2></center>
+          <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+          <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+        </div>
+        <div class="col-md-3" data-aos="fade-up"
+        data-aos-duration="3000">
+          <!-- Content for the third part -->
+          <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger2.jpg" alt="">
+          <center> <h2>Juicy Burger</h2></center>
+          <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+          <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+        </div>
+        <div class="col-md-3" data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine" >
+          <!-- Content for the fourth part -->
+          <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/burger3.jpg" alt="">
+          <center> <h2>Juicy Burger</h2></center>
+          <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+          <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+        </div>
+      </div>
+
+      <!-- section 5 -->
+</div>
+<h1 class="section4_h1"> Desert Menu</h1> <br>
+
+<div class="row" id="section4_row1" data-aos="fade-right"
+data-aos-offset="300"
+data-aos-easing="ease-in-sine">
+   <div class="col-md-3">
+     <!-- Content for the first part -->
+     <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert2.jpg" alt="">
+      <center> <h2>Strawberry Mix</h2></center>
+      <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+      <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+      
+
+   </div>
+   <div class="col-md-3" data-aos="fade-up"
+   data-aos-duration="3000">
+     <!-- Content for the second part -->
+     <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert1.jpg" alt="">
+     <center> <h2>Choclate Mix</h2></center>
+     <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+     <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+   </div>
+   <div class="col-md-3" data-aos="zoom-out-left">
+     <!-- Content for the third part -->
+     <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert3.jpg" alt="">
+     <center> <h2>Apple Pie</h2></center>
+     <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+     <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+   </div>
+   <div class="col-md-3" data-aos="zoom-out-right">
+     <!-- Content for the fourth part -->
+     <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/dessert4.jpg" alt="">
+     <center> <h2>Sunday waffle</h2></center>
+     <div class="col-md-1.5"><strong> <input id="Cart3" type="button" value="$8"></strong></div>
+     <div class="col-md-1.5"><a href="#" id="Cart_hover1" class="fa-solid fa-plus"> &nbsp; add to cart</a></div>
+
+
+   </div>
+ </div>
+ <!-- section5 -->
+ <div class="section5" >
+  <img data-aos="fade-left"
+  data-aos-anchor="#example-anchor"
+  data-aos-offset="500"
+  data-aos-duration="500" src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/nate-johnston-ozHMc88WgcI-unsplash.jpg" id="section5_img1" alt="">
+     <div id="section2_right">        <a href="#"> <input id="testimals" type="button" value="Testimals"></a>  
+      <span id="What" data-aos="zoom-out-right"><b> What our clients <br> have to say </b></span> 
+        <span id="section5_99">99</span>
+       <span id="Lorem44" data-aos="zoom-out-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dicta eligendi ipsum repellendus ea! Sequi tempora iure quaerat consectetur velit adipisci natus culpa architecto voluptas, accusantium sapiente corrupti hic mollitia sed rerum cumque repellat! Ullam autem iure dolor blanditiis eligendi non corrupti modi deleniti.</span>
+       <span ><strong id="surendra" data-aos="zoom-out-right">-Surendra</strong> </span>
+     </div>
+
+
+<div class="section6" id="section6" data-aos="flip-right">
+  <div class="row" style="color: red;">
+    <div class="col-md-3"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/insta2.jpg" alt=""></div>
+    <div class="col-md-3"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/inta3.jpg" alt=""></div>
+    <div class="col-md-3"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/inta4.jpg" alt=""></div>
+    <div class="col-md-3"><img src="https://jevelin.shufflehound.com/burger-shop/wp-content/uploads/sites/44/2020/09/insta1.jpg" alt=""></div>
+
+  </div>
+</div>
+
+<!-- section7 -->
+
+<footer class="footer" data-aos="zoom-out">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+<h1>SURENDRA</h1>       </div>
+      <div class="col-md-4">
+        <h3><strong>contact us</strong></h3>
+        <ul class="footer-links"> 
+          <li><a  href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#"><i class="fa-brands fa-square-instagram"></i></a></li> <br>
+          
+        </ul>
+      </div>
+     
+          <div class="col-md-4">
+            <h3>SUBSCRIBE</h3>
+            <form id="subscribe-form">
+              <input type="email" name="email" id="email" placeholder="Enter your mail id" required>
+              <button type="submit" id="btn_section7">Subscribe</button> <br>
+            <center><span><small>Get the Latest special Offers &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;</small></span> </center>  
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>        
+      </div>
+    </div>
+  </div> 
+</footer>
+
+  </div>
+</div>
+
+
+  </div>
+
+  <!-- Include Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
+
+<style>
+  body{
+  overflow-x: hidden;
+}
+/* .tittle{
+  border-radius: 50px;
+  border-color: chartreuse;
+} */
+.navbar, .navbar-expand-lg, .navbar-custom{
+    position:relative;
+    width: 100%;
+    display: fixed; 
+}
+.checkout-links a{
+  
+    color: #333; /* Change the color of the icons */
+    font-size: 20px;
+    text-decoration: none;
+  
+}
+.checkout::before{
+  color: #f6f6f6;
+  
+}
+.All{
+    position:relative;
+}
+/* Custom styles for the navbar */
+.navbar-custom {
+  background: linear-gradient(45deg, #FF6B6B, #3E64FF);
+  /* padding: 10px 0; */
+  /* position: relative; */
+ 
+}
+
+.navbar-custom .navbar-brand {
+  color: aqua;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  
+}
+
+.navbar-toggler {
+  border-color: white;
+  background-color: aliceblue;
+}
+
+.navbar-toggler-icon {
+  color: black;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Center the logo in the navbar */
+.center-logo {
+  display: flex;
+  justify-content: center;
+}
+
+/* Adjust spacing for mobile devices */
+@media (max-width: 576px) {
+  .navbar-brand {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #navbarNav {
+    text-align: center;
+  }
+}
+
+/* #seemore{
+    display: inline;
+} */
+.Burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000dc;
+    padding-top: 50px;
+    /* height: 100vh; */
+  }
+
+  .background {
+    background-image: url('./Layer-692.png');
+    width: 40%;
+    max-width: 100%;
+    height: 40%;
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #seemore {
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    float: center;
+    position: relative;
+    margin-left: 40vh;
+    display: inline;
+    margin-top: 65vh;
+    border-radius: 25px;
+    font-size: x-large;
+  }
+  #seemore:hover{
+    background: #3E64FF;
+  }
+  /* #seemorea,#seemore:hover{
+    text-decoration: none;
+  } */
+
+  @media (max-width: 576px) {
+    .Burger {
+      height: auto;
+    }
+
+    .background {
+      height: auto;
+    }
+  }
+  #Tasty{
+    color: aqua;
+    position: absolute;
+    display: inline;
+    font-size: 50px;
+    text-align: center;
+    margin-left: 24vh;
+  }
+  #Tasty1{
+    color: rgb(38, 0, 255);
+    position: absolute;
+    display: inline;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 90px;
+    margin-top: 20px;
+    margin-left: 27vh;
+  }
+
+ 
+  #img2{
+    border-radius: 15px;
+    display: inline;
+    margin-top: 30vh;
+  }
+  #section2_right{
+    display: inline;
+  }
+ 
+
+  .section2 {
+    background-image: url('./Layer-692.png');
+    margin-top: 95vh;
+    width: 40%;
+    max-width: 100%;
+    height: 40%;
+    display: inline;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #about {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    float: center;
+    position: absolute;
+    margin-left: 7vh;
+    margin-top: 45vh;
+    display: inline;
+    
+    border-radius: 35px;
+    font-size: x-large;
+  }
+  #about:hover{
+    background: #3E64FF;
+    text-decoration: none;
+  }
+
+  @media (max-width: 576px) {
+    .section2 {
+      height: auto;
+    }
+
+    .section2_right {
+      height: auto;
+    }
+  }
+
+
+#Delivering{
+
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    position: absolute;
+    margin-left: 7vh;
+    margin-top: 52vh;
+    display: inline;
+    font-size: 40px;
+}
+
+#Amid{
+
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    position: absolute;
+    margin-left: 7vh;
+    margin-top: 70vh;
+    display: inline;
+    font-size: 20px;
+}
+
+#Special{
+    margin:8vh 0vh 0vh 5vh;
+}
+
+#NEW{
+    background-color: #FF6B6B;
+    color: white;
+  
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    float: center;
+    position: absolute;
+    
+    display: inline;
+    border-radius: 25px;
+    font-size: large;
+}
+
+#Fat{
+    border-radius: 10px;
+    size: 25px;
+    color: rgba(0, 0, 0, 0.502);
+    border-color:rgba(0, 0, 0, 0.372);
+}
+
+#cost{
+    display: inline;
+}
+
+#Check{
+    display: inline;
+    position: relative;
+    border-radius: 25px;
+    font-size: 30px;
+    color: #fff;
+    background: #000000;
+}
+
+#See{
+    border: 2px;
+   color: #000000;
+    margin-left: 20vh;
+
+}
+
+.fa-solid, .fa-circle-plus, .fa-beat{
+    font-size: 30px;
+
+}
+
+#Check:hover{
+    color: #fff;
+    background: #FF6B6B;
+    text-decoration: none;
+   
+}
+
+.card{
+    width: 27vh;
+    height: 50vh;
+}
+
+.card-img-top{
+    height: 150px;
+    width: 150px;
+}
+
+#Cart2{
+   border-radius: 25px;
+   color: #f6f6f6;
+   background: #FF6B6B;
+   width: 100px;
+   height: 50px;
+   border-color: #FF6B6B;
+    
+}
+
+.fa-plus{
+    
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: #000000;
+}
+
+#Cart_hover:hover{
+    
+    text-decoration: none;
+    color: #FF6B6B;
+    
+}
+
+/* section 3 */
+
+.section3{
+    margin-top: 15vh;
+    background-color: #000000;
+    width: 100%;
+    height: 180vh;
+    padding-left: 35px;
+    
+}
+
+#section3_btn1{
+display: inline;
+position: absolute;
+width: 100px;
+height: 40px;
+color: white;
+background-color: #FF6B6B;
+border-radius: 15px;
+margin-top: 50px;
+margin-left: 70px;
+}
+
+#section3_span1{
+  color: #f6f6f6;  
+  display: inline;
+  position: absolute;
+  font-size: 60px;
+  margin-top: 80px;
+}
+
+#section3_span2{
+    color: #f6f6f6;  
+    display: inline;
+    position: absolute;
+    font-size: 30px;
+    margin-top: 390px;
+}
+
+ #section3_btn2{
+    display: inline;
+    position: absolute;
+    margin-top: 440px;
+    width: 180px;
+    height: 60px;
+    background: #000000b6;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+
+}
+
+#section3_btn2:hover{
+    background: #f6f6f66b;
+}
+
+#section3_img2{
+    float: right;
+}
+
+/* section  4 */
+
+.section4_h1{
+margin-top: 50px;
+padding-left: 30px;
+font-size: 60px;
+display:block;
+}
+
+#section4_row1{
+    background: #f6f6f6;
+    padding-left: 100px;
+    flex-direction: row;
+}
+
+#Cart3{
+    border-radius: 25px;
+    color: #f6f6f6;
+    background: #FF6B6B;
+    width: 50px;
+    height: 30px;
+    border-color: #FF6B6B;
+    display: inline;
+     position: absolute;
+     margin-left: 50px;
+     padding-left: 5px;
+ }
+
+ #Cart_hover1{
+    
+    margin-left: 150px;
+    margin-bottom: 105px;
+    font-size: small;
+ }
+
+ .fa-plus1{
+     
+     font-size: 15px;
+     text-align: center;
+     margin-top: 10px;
+     color: #000000;
+ }
+
+ #Cart_hover1:hover{
+     
+     text-decoration: none;
+     color: #FF6B6B;
+ }
+
+ /* section5 */
+ .section5 {
+  background-image: url('./Layer-692.png');
+  margin-top: 95vh;
+  width: 40%;
+  max-width: 100%;
+  height: 40%;
+  display: inline;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 40px;
+}
+ #section5_img1{
+  border-radius: 25px;
+  margin-top: 70px;
+  margin-bottom: 85px;
+  
+ }
+ #testimals {
+  background-color: #000000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  float: center;
+  position: absolute;
+  margin-left: 7vh;
+  margin-top: 45vh;
+  display: inline;
+  
+  border-radius: 35px;
+  font-size: x-large;
+}
+#testimals:hover{
+  background: #3E64FF;
+  text-decoration: none;
+}
+
+@media (max-width: 576px) {
+  #section5{
+    height: auto;
+  }
+
+  #section5 {
+    height: auto;
+  }
+}
+
+
+#What{
+
+  color: rgb(107, 20, 20);
+  font-size: 18px;
+  position: absolute;
+  margin-left: 7vh;
+  margin-top: 52vh;
+  display: inline;
+  font-size: 40px;
+}
+#section5_99{
+  color: #FF6B6B;
+  display: inline;
+  position: absolute;
+  margin-top: 70vh;
+  margin-left: 10vh;
+  
+  font-size: 55px;
+}
+
+#Lorem44{
+
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  position: absolute;
+  margin-left: 7vh;
+  margin-top: 80vh;
+  display: inline;
+  font-size: 20px;
+}
+#surendra{
+  margin-left: 9vh;
+  margin-top: 105vh;
+  position: absolute;
+  font-size: x-large;
+}
+#section6{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+  
+}
+#footer_logo {
+  color: rgba(5, 5, 5, 0.874);
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: xx-large;
+  margin-left: 50px;
+  
+}
+#lorem5{
+  font-size: medium;
+  color: #000000;
+  font-weight: normal;
+  padding: 0px;
+  margin-left: 55px;
+  
+}
+
+/* Remove bullets/symbols from the footer links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align the icons horizontally */
+}
+
+.footer-links li {
+  margin-right: 10px; /* Add spacing between the icons */
+}
+
+/* Style the font awesome icons */
+.footer-links li a {
+  color: #333; /* Change the color of the icons */
+  font-size: 20px;
+  text-decoration: none;
+}
+/* Style for the footer links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li a {
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Hover effect */
+.footer-links li a:hover {
+  color: #007bff; /* Change color on hover */
+}
+#email {
+  margin-top: 25px;
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: background-color 0.3s;
+}
+
+#email:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+  
+}
+
+#btn_section7 {
+  margin-top: 10px;
+  width: 280px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btn_section7:hover {
+  background-color: #e67e22;
+}
+
+
+
+
+
+
+</style>
